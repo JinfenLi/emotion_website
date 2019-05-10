@@ -25,7 +25,7 @@ def register():
     db.session.add(user)
     db.session.commit()
 
-    return 'sucerro'
+    return 'success'
 
 @main.route('/login', methods=['POST','GET'])
 def login():
