@@ -7,7 +7,7 @@ db = SQLAlchemy()
 
 def create_app():
     app = Flask(__name__)
-    app.config.from_object(config.DevelopmentConfig)
+    app.config.from_object(config.ProductionConfig)
     # explicitly assign a static folder for app, useful in blueprint
     app.static_folder = 'static'
     # app.template_folder = 'templates'
